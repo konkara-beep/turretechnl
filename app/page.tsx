@@ -58,7 +58,7 @@ export default function Home() {
     }
   }
 
-  const changeColor = (hex, name) => {
+  const changeColor = (hex: string, name: string) => {
     setLevels(levels.map(level => ({
       ...level,
       blocks: level.blocks.map(block =>
