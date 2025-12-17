@@ -67,7 +67,7 @@ export default function Home() {
     })));
   };
 
-  const addBlockToLevel = (levelId) => {
+  const addBlockToLevel = (levelId: number) => {
     const level = levels.find(l => l.id === levelId);
     const levelIndex = levels.findIndex(l => l.id === levelId);
     let maxBlocksForLevel = 1;
