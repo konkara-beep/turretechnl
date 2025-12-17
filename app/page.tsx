@@ -72,7 +72,7 @@ export default function Home() {
     const levelIndex = levels.findIndex(l => l.id === levelId);
     let maxBlocksForLevel = 1;
     if (levelIndex === 1) maxBlocksForLevel = 2;
-    if (level.blocks.length >= maxBlocksForLevel) {
+    if (level && level.blocks.length >= maxBlocksForLevel) {
       alert('Cannot add more blocks to this level');
       return;
     }
